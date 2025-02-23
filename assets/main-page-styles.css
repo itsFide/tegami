@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --black: #0b0b0b;
+    --white: #fff;
+    --second-black: #151515;
+    --second-white: #dadada;
+    --red: #bb1818;
+    --green: #15975f;
+
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+body{
+    background: var(--black);
+}
+.btn{
+    font-family: "Montserrat";
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -0.43px;
+    color: #EAEAEA;
+    padding: 10px 40px;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    transition: all .3s;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: max-content;
+}
+.btn-red{
+    background: var(--red);
+}
+.btn-red:hover{
+    background: rgb(239, 83, 80);
+}
+.header{
+    padding: 16px 0;
+    background: var(--black);
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 1 1 0%;
+    /* height: 100%; */
+    background-color: rgb(11, 11, 11);
+    background-image: radial-gradient(transparent, black), url(/cdn/shop/t/1/assets/hero.png);
+    background-position: center center;
+    background-size: cover;
+    height: calc(100vh - 79px);
+}
+.hero__inner{
+    padding: 80px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    max-width: 1440px;
+    margin: 0px auto;
+    z-index: 2;
+    height: 100%;
+}
