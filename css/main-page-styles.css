@@ -507,11 +507,40 @@ body.hidden{
         margin-bottom: 0;
     }
     .knives-item::before{
-        width: 27.273vw;
-        height: 27.273vw;
-        filter: blur(27.273vw);
+        width: 81.818vw;
+        height: 81.818vw;
+        /* filter: blur(27.273vw); */
+        filter: unset;
+     
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        bottom: -23%;
     }
-    
+    .knives-item:nth-child(1)::before{
+        background: url('../assets/knives-blur-1.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .knives-item:nth-child(2)::before{
+        background: url('../assets/knives-blur-2.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .knives-item:nth-child(3)::before{
+        background: url('../assets/knives-blur-3.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .knives-item:nth-child(4)::before{
+        background: url('../assets/knives-blur-4.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
     .knives-item__img{
     
         border-radius: 2.727vw;
@@ -883,11 +912,57 @@ body.hidden{
         margin-bottom: 0;
     }
     .slice-item::before{
-        width: 29.091vw;
-        height: 29.091vw;
-        
-        filter: blur(12.727vw);
+  
+        width: 360px;
+        height: 360px;
+        /* filter: blur(12.727vw); */
+        filter: unset;
     }
+    .slice-item:first-child::before{
+        background: url('../assets//slice-blur-1.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        left: -50%;
+        top: -50%;
+    } 
+    .slice-item:nth-child(2)::before{
+      
+        right: -37%;
+        top: -72%;
+        background: url('../assets//slice-blur-2.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .slice-item:nth-child(3)::before{
+        background: url('../assets//slice-blur-3.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        left: -37%;
+        top: -58%;
+    } 
+    .slice-item:nth-child(4)::before{
+      
+        right: -32%;
+        top: -65%;
+        background: url('../assets//slice-blur-4.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .slice-item:nth-child(5)::before{
+        background: url('../assets//slice-blur-5.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        left: -31%;
+        top: -60%;
+    } 
     .slice-item__border{
         padding: 0.17vw 0 0.17vw 0.17vw;
         border-radius: 1.364vw 0 0 1.364vw;
